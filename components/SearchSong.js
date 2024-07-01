@@ -32,7 +32,7 @@ const SearchSong = () => {
     useEffect(() => {
         const fetchSongs = async () => {
             try {
-                const response = await axios.get('https://pinoysing-374a04dc1fef.herokuapp.com/pinoysing');
+                const response = await axios.get('https://projectsbackend-7113dc7e820d.herokuapp.com/pinoysing');
                 setAllSongs(response.data);
             } catch (error) {
                 console.error('Error fetching songs:', error);
